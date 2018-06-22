@@ -1,7 +1,12 @@
 
 /* Put your custom styles here */
 
-Header.subtitle {
-    background-color: blue;
+/* for header */
+.hed {
+    color: lightsalmon;
+}
+
+.dek {
+    color: lightseagreen;
 }
 
