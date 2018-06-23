@@ -26,7 +26,7 @@ the way to Pokémon Sun/Moon! All Seven Generations!
 ]` /]
 // [display value: regionPictures /] for debugging the array
 [section]
-[Waypoint onEnterView:`whichGen = 1`]
+[Waypoint onEnterView:`whichGen = 1` /]
 # Generation 1: The Kanto Region
 The region based in the first Pokémon games, 
 [Red and Blue](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions),
@@ -45,44 +45,37 @@ The cities and towns are named with the theme of ***colors*** // TODO add respec
 * Saffron City
 * Cinnabar City
 * The Indigo Plateau (Known as the Pokémon League)
-[/Waypoint]
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 2`]
+[Waypoint onEnterView:`whichGen = 2` /]
 # Generation 2: The Johto Region
 Whose mans really out here
-[/Waypoint]
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 3`]
+[Waypoint onEnterView:`whichGen = 3` /]
 # Generation 3: The Hoenn Region
-[/Waypoint]
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 4`]
+[Waypoint onEnterView:`whichGen = 4` /]
 # Generation 4: The Sinnoh Region
-[/Waypoint]
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 5`]
+[Waypoint onEnterView:`whichGen = 5` /]
 # Generation 5: The Unova Region
-[/Waypoint]
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 6`]
+[Waypoint onEnterView:`whichGen = 6` /]
 # Generation 6: The Kalos Region
-[/Waypoint]
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 7`]
+[Waypoint onEnterView:`whichGen = 7` /]
 # Generation 7: The Alola Region
-[/Waypoint]
 [/section]
 
 [fixed]
