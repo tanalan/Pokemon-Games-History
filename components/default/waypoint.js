@@ -8,8 +8,9 @@ class Waypoint extends React.PureComponent {
   }
 
   render() {
-    return <Screen align="center" direction="row" height="75vh" {...this.props} />;
+    return <Screen align="center" direction="row" height="7vh" {...this.props} />;
   }
+  // @alan just changed the height to 7 instead of 75 to lower the padding
 
 }
 
