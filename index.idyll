@@ -15,14 +15,17 @@ the way to Pokémon Sun/Moon! All Seven Generations!
 
 //TODO Some of my backstory with Pokémon games maybe
 [var name:"whichGen" value: 1 /]
+[var name:"regionPics" value:`new Array(7)` /]
+[display value: regionPics /]
 [section]
 // TODO find consistent pics for each region
 // Maybe official maps for each game (Bulbapedia seems fine tho)
 [Waypoint onEnterView:`whichGen == 1`]
 # Generation 1: The Kanto Region
-[Fixed]
+[fixed]
+//TODO Make a component that chooses the proper `whichGen` image
 ![Kanto](https://cdn.bulbagarden.net/upload/4/43/HGSS_Kanto.png)
-[/Fixed]
+[/fixed]
 The region based in the first Pokémon games, [Red and Blue](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions),
 the Kanto region is based on and named after the real [Kantō](https://en.wikipedia.org/wiki/Kant%C5%8D_region) region in Japan.
 
