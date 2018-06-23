@@ -16,13 +16,13 @@ the way to Pokémon Sun/Moon! All Seven Generations!
 [var name:"whichGen" value: 1 /]
 // Contains each region image for the scrolling to change
 [var name:"regionPictures" value:`[
-  'images/kanto.png',
-  'images/johto.png',
-  'images/hoenn.png',
-  'images/sinnoh.png',
-  'images/unova.png',
-  'images/kalos.png',
-  'images/alola.png'
+  './images/kanto.png',
+  './images/johto.png',
+  './images/hoenn.png',
+  './images/sinnoh.png',
+  './images/unova.png',
+  './images/kalos.png',
+  './images/alola.png'
 ]` /]
 // [display value: regionPictures /] for debugging the array
 [section]
