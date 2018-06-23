@@ -1,59 +1,4 @@
-require=(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/aside.js":[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Aside = function (_React$PureComponent) {
-  _inherits(Aside, _React$PureComponent);
-
-  function Aside() {
-    _classCallCheck(this, Aside);
-
-    return _possibleConstructorReturn(this, (Aside.__proto__ || Object.getPrototypeOf(Aside)).apply(this, arguments));
-  }
-
-  _createClass(Aside, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'aside-container' },
-        _react2.default.createElement(
-          'div',
-          { className: 'aside' },
-          this.props.children
-        )
-      );
-    }
-  }]);
-
-  return Aside;
-}(_react2.default.PureComponent);
-
-Aside._idyll = {
-  name: "Aside",
-  tagType: "open"
-};
-
-exports.default = Aside;
-
-},{"react":"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/node_modules/react/index.js"}],"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/fixed.js":[function(require,module,exports){
+require=(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/fixed.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -555,8 +500,10 @@ var Waypoint = function (_React$PureComponent) {
   _createClass(Waypoint, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_screen2.default, _extends({ align: 'center', direction: 'row', height: '75vh' }, this.props));
+      return _react2.default.createElement(_screen2.default, _extends({ align: 'center', direction: 'row', height: '35vh' }, this.props));
     }
+    // @alan just changed the height to 7 instead of 75 to lower the padding
+
   }]);
 
   return Waypoint;
@@ -32934,20 +32881,19 @@ module.exports = function (str, locale) {
 },{}],"__IDYLL_AST__":[function(require,module,exports){
 "use strict";
 
-module.exports = [["var", [["name", ["value", "whichGen"]], ["value", ["value", 1]]], []], ["TextContainer", [], [["Header", [["title", ["value", "Pokémon Games History"]], ["subtitle", ["value", "Generations 1 to 7"]], ["author", ["value", "Alan Tan"]], ["authorLink", ["value", "https://github.com/tanalan"]]], []], ["h1", [], ["Currently a work in progress", "!"]], ["p", [], ["Hi there! This will be an interactive article (made using ", ["a", [["href", ["value", "https://idyll-lang.org/"]]], ["Idyll"]], ") for showing facts, information,\nand history about the Pokémon games, from the beginning Pokémon Red/Blue, all\nthe way to Pokémon Sun/Moon! All Seven Generations!"]], ["section", [], [["Waypoint", [["onEnterView", ["expression", "whichGen == 1"]]], [["h1", [], ["Generation ", "1", ": The Kanto Region"]], ["p", [], [["Fixed", [], [["img", [["src", ["value", "https://cdn.bulbagarden.net/upload/4/43/HGSS_Kanto.png"]], ["alt", ["value", "Kanto"]]], []]]], "\nThe region based in the first Pokémon games, ", ["a", [["href", ["value", "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions"]]], ["Red and Blue"]], ",\nthe Kanto region is based on and named after the real ", ["a", [["href", ["value", "https://en.wikipedia.org/wiki/Kant%C5%8D_region"]]], ["Kantō"]], " region in Japan."]], ["h2", [], ["Theme"]], ["p", [], ["The cities and towns are named with the theme of ", ["strong", [], [["em", [], ["colors"]]]], " "]], ["ul", [], [["li", [], ["Pallet Town"]], ["li", [], ["Viridian City"]], ["li", [], ["Pewter City"]], ["li", [], ["Cerulean City"]], ["li", [], ["Vermillion City"]], ["li", [], ["Celadon City"]], ["li", [], ["Fuchsia City"]], ["li", [], ["Saffron City"]], ["li", [], ["Cinnabar City"]], ["li", [], ["The Indigo Plateau (Known as the Pokémon League)"]]]]]]]], ["h1", [], ["Generation ", "2", ": The Johto Region"]], ["Aside", [], [["img", [["src", ["value", "https://cdn.bulbagarden.net/upload/6/64/JohtoMap.png"]], ["alt", ["value", "Johto"]]], []]]], ["h1", [], ["Generation ", "3", ": The Hoenn Region"]], ["Aside", [], [["img", [["src", ["value", "https://cdn.bulbagarden.net/upload/8/85/Hoenn_ORAS.png"]], ["alt", ["value", "Hoenn"]]], []]]], ["h1", [], ["Generation ", "4", ": The Sinnoh Region"]], ["Aside", [], [["img", [["src", ["value", "https://cdn.bulbagarden.net/upload/7/74/Pt_Sinnoh.png"]], ["alt", ["value", "Sinnoh"]]], []]]], ["h1", [], ["Generation ", "5", ": The Unova Region"]], ["Aside", [], [["img", [["src", ["value", "https://cdn.bulbagarden.net/upload/f/fc/Unova_B2W2_alt.png"]], ["alt", ["value", "Unova from BW2"]]], []]]], ["h1", [], ["Generation ", "6", ": The Kalos Region"]], ["Aside", [], [["img", [["src", ["value", "https://cdn.bulbagarden.net/upload/8/8a/Kalos_alt.png"]], ["alt", ["value", "Kalos"]]], []]]], ["h1", [], ["Generation ", "7", ": The Alola Region"]], ["Aside", [], [["img", [["src", ["value", "https://cdn.bulbagarden.net/upload/0/0b/Alola_USUM_artwork.png"]], ["alt", ["value", "Alola"]]], []]]]]]];
+module.exports = [["var", [["name", ["value", "whichGen"]], ["value", ["value", 1]]], []], ["var", [["name", ["value", "regionPictures"]], ["value", ["expression", "[\n  'images/kanto.png',\n  'images/johto.png',\n  'images/hoenn.png',\n  'images/sinnoh.png',\n  'images/unova.png',\n  'images/kalos.png',\n  'images/alola.png'\n]"]]], []], ["TextContainer", [], [["Header", [["title", ["value", "Pokémon Games History"]], ["subtitle", ["value", "Generations 1 to 7"]], ["author", ["value", "Alan Tan"]], ["authorLink", ["value", "https://github.com/tanalan"]]], []], ["h1", [], ["Currently a work in progress", "!"]], ["p", [], ["Hi there! This will be an interactive article (made using ", ["a", [["href", ["value", "https://idyll-lang.org/"]]], ["Idyll"]], ") for showing facts, information,\nand history about the Pokémon games, from the beginning Pokémon Red/Blue, all\nthe way to Pokémon Sun/Moon! All Seven Generations!"]], ["section", [], [["h1", [], ["Generation ", "1", ": The Kanto Region"]], ["Waypoint", [["onEnterView", ["expression", "whichGen = 1"]]], [["p", [], ["\nThe region based in the first Pokémon games, ", ["a", [["href", ["value", "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Red_and_Blue"]]], ["Red and Blue"]], ",\nthe Kanto region is based on and named after the real ", ["a", [["href", ["value", "https://en.wikipedia.org/wiki/Kant%C5%8D_region"]]], ["Kantō"]], " region in Japan."]]]], ["h2", [], ["Theme"]], ["p", [], ["The cities and towns are named with the theme of ", ["strong", [], [["em", [], ["colors"]]]], " "]], ["ul", [], [["li", [], ["Pallet Town"]], ["li", [], ["Viridian City"]], ["li", [], ["Pewter City"]], ["li", [], ["Cerulean City"]], ["li", [], ["Vermillion City"]], ["li", [], ["Celadon City"]], ["li", [], ["Fuchsia City"]], ["li", [], ["Saffron City"]], ["li", [], ["Cinnabar City"]]]]]], ["section", [], [["h1", [], ["Generation ", "2", ": The Johto Region"]], ["Waypoint", [["onEnterView", ["expression", "whichGen = 2"]]], ["\nIn 1999, Pokémon Gold and Silver were released, and starred the new Johto region.\nThese games were revolutionary, bringing real colors and improved gameply into the games."]], ["h2", [], ["Theme"]], ["p", [], ["The cities and towns are named with relationships to ", ["strong", [], [["em", [], ["plants and colors"]]]], "\n"]], ["ul", [], [["li", [], ["New Bark Town"]], ["li", [], ["CherryGrove City"]], ["li", [], ["Violet City"]], ["li", [], ["Azalea Town"]], ["li", [], ["Goldenrod City"]], ["li", [], ["Ecruteak City"]], ["li", [], ["Olivine City"]], ["li", [], ["Cianwood City"]], ["li", [], ["Mahagony Town"]], ["li", [], ["Blackthorn City"]]]]]], ["section", [], [["h1", [], ["Generation ", "3", ": The Hoenn Region"]], ["Waypoint", [["onEnterView", ["expression", "whichGen = 3"]]], ["\nPokémon Ruby and Sapphire were soon out in 2002, and with it came the Hoenn region.\nKnown for a \"7.8/10 too much water\" IGN meme, this region was the first to introduce\na post-game battle area, the Battle Arena and the Battle Frontier (introduced in Pokémon Emerald)."]], ["h2", [], ["Theme"]], ["p", [], ["The cities and towns naming seem to be a combination of two words that are interrelated"]], ["ul", [], [["li", [], ["Littleroot Town"]], ["li", [], ["Oldale Town"]], ["li", [], ["Petalburg City"]], ["li", [], ["Rustboro City"]], ["li", [], ["Dewford City"]], ["li", [], ["Slateport City"]], ["li", [], ["Mauville City"]], ["li", [], ["Verdanturf City"]], ["li", [], ["Lavaridge City"]], ["li", [], ["Fallabor City"]], ["li", [], ["Lilycove City"]], ["li", [], ["Mossdeep City"]], ["li", [], ["Sootopolis City"]], ["li", [], ["Pacifidlog City"]], ["li", [], ["Ever Grande City"]]]]]], ["section", [], [["h1", [], ["Generation ", "4", ": The Sinnoh Region"]], ["Waypoint", [["onEnterView", ["expression", "whichGen = 4"]]], ["\nIntro for Sinnoh Here"]]]], ["section", [], [["h1", [], ["Generation ", "5", ": The Unova Region"]], ["Waypoint", [["onEnterView", ["expression", "whichGen = 5"]]], ["\nIntro for Unova here. Note that this region is BW2"]]]], ["section", [], [["h1", [], ["Generation ", "6", ": The Kalos Region"]], ["Waypoint", [["onEnterView", ["expression", "whichGen = 6"]]], ["\nInfo for gen 6 here. based off france"]]]], ["section", [], [["h1", [], ["Generation ", "7", ": The Alola Region"]], ["Waypoint", [["onEnterView", ["expression", "whichGen = 7"]]], ["\nAlolaaaaaaa"]]]], ["fixed", [], [["img", [["src", ["expression", "regionPictures[whichGen - 1]"]]], []]]]]]];
 
 },{}],"__IDYLL_COMPONENTS__":[function(require,module,exports){
 'use strict';
 
 module.exports = {
 	'header': require('/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/header.js'),
-	'fixed': require('/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/fixed.js'),
 	'waypoint': require('/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/waypoint.js'),
-	'aside': require('/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/aside.js'),
+	'fixed': require('/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/fixed.js'),
 	'text-container': require('/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/text-container.js')
 };
 
-},{"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/aside.js":"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/aside.js","/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/fixed.js":"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/fixed.js","/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/header.js":"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/header.js","/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/text-container.js":"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/text-container.js","/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/waypoint.js":"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/waypoint.js"}],"__IDYLL_CONTEXT__":[function(require,module,exports){
+},{"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/fixed.js":"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/fixed.js","/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/header.js":"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/header.js","/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/text-container.js":"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/text-container.js","/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/waypoint.js":"/Users/alantan/Documents/UW/CSE/Research/Articles/Pokemon-Games-History/components/default/waypoint.js"}],"__IDYLL_CONTEXT__":[function(require,module,exports){
 
 module.exports = function () {
 

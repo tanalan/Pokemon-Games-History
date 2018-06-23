@@ -26,12 +26,12 @@ the way to Pokémon Sun/Moon! All Seven Generations!
 ]` /]
 // [display value: regionPictures /] for debugging the array
 [section]
-[Waypoint onEnterView:`whichGen = 1` /]
 # Generation 1: The Kanto Region
+[Waypoint onEnterView:`whichGen = 1` ]
 The region based in the first Pokémon games, 
-[Red and Blue](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions),
+[Red and Blue](https://en.wikipedia.org/wiki/Pok%C3%A9mon_Red_and_Blue),
 the Kanto region is based on and named after the real [Kantō](https://en.wikipedia.org/wiki/Kant%C5%8D_region) region in Japan.
-
+[/Waypoint]
 ## Theme
 The cities and towns are named with the theme of ***colors*** // TODO add respective colors/icons for each town/city
 // also maybe dynamically change the map to locate the respective city (either clicked on or hovered over)
@@ -44,38 +44,83 @@ The cities and towns are named with the theme of ***colors*** // TODO add respec
 * Fuchsia City
 * Saffron City
 * Cinnabar City
-* The Indigo Plateau (Known as the Pokémon League)
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 2` /]
 # Generation 2: The Johto Region
-Whose mans really out here
+[Waypoint onEnterView:`whichGen = 2`]
+In 1999, Pokémon Gold and Silver were released, and starred the new Johto region.
+These games were revolutionary, bringing real colors and improved gameply into the games.
+[/Waypoint]
+
+## Theme
+The cities and towns are named with relationships to ***plants and colors***
+* New Bark Town
+* CherryGrove City
+* Violet City
+* Azalea Town
+* Goldenrod City
+* Ecruteak City
+* Olivine City
+* Cianwood City
+* Mahagony Town
+* Blackthorn City
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 3` /]
+
 # Generation 3: The Hoenn Region
+[Waypoint onEnterView:`whichGen = 3` ]
+Pokémon Ruby and Sapphire were soon out in 2002, and with it came the Hoenn region.
+Known for a "7.8/10 too much water" IGN meme, this region was the first to introduce
+a post-game battle area, the Battle Arena and the Battle Frontier (introduced in Pokémon Emerald).
+[/Waypoint]
+
+## Theme
+The cities and towns naming seem to be a combination of two words that are interrelated
+* Littleroot Town
+* Oldale Town
+* Petalburg City
+* Rustboro City
+* Dewford City
+* Slateport City
+* Mauville City
+* Verdanturf City
+* Lavaridge City
+* Fallabor City
+* Lilycove City
+* Mossdeep City
+* Sootopolis City
+* Pacifidlog City
+* Ever Grande City
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 4` /]
 # Generation 4: The Sinnoh Region
+[Waypoint onEnterView:`whichGen = 4` ]
+Intro for Sinnoh Here
+[/Waypoint]
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 5` /]
 # Generation 5: The Unova Region
+[Waypoint onEnterView:`whichGen = 5` ]
+Intro for Unova here. Note that this region is BW2
+[/Waypoint]
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 6` /]
 # Generation 6: The Kalos Region
+[Waypoint onEnterView:`whichGen = 6` ]
+Info for gen 6 here. based off france
+[/Waypoint]
 [/section]
 
 [section]
-[Waypoint onEnterView:`whichGen = 7` /]
 # Generation 7: The Alola Region
+[Waypoint onEnterView:`whichGen = 7` ]
+Alolaaaaaaa
+[/Waypoint]
 [/section]
 
 [fixed]
