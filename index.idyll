@@ -100,13 +100,50 @@ The cities and towns naming seem to be a combination of two words that are inter
 [Waypoint onEnterView:`whichGen = 4` ]
 Intro for Sinnoh Here
 [/Waypoint]
+## Theme
+Not sure what the names are themed after! :O
+* Twinleaf Town
+* Sandgem Town
+* Jubilife City
+* Oreburgh City
+* Floaroma City
+* Eterna City
+* Hearthome City
+* Solaceon Town
+* Veilstone City
+* Pastoria City
+* Celestic Town
+* Canalave City
+* Snowpoint City
+* Sunnyshore City
+
 [/section]
 
 [section]
 # Generation 5: The Unova Region
 [Waypoint onEnterView:`whichGen = 5` ]
-Intro for Unova here. Note that this region is BW2
+Intro for Unova here. Note that this region is BW2.
+It is based off the New York metropolitan area!
 [/Waypoint]
+## Theme
+Something to do with weather! Clouds specifically
+* Nuvema Town
+* Accumula Town
+* Striaton City
+* Nacrene City
+* Castelia City
+* Nimbasa City
+* Anville Town
+* Driftveil City
+* Mistralton City
+* Icirrus City
+* Opelucid City
+* Lacunosa Town
+* Undella Town
+* Black City
+* White Forest
+* Aspertia Town
+* Virbank City
 [/section]
 
 [section]
@@ -114,6 +151,21 @@ Intro for Unova here. Note that this region is BW2
 [Waypoint onEnterView:`whichGen = 6` ]
 Info for gen 6 here. based off france
 [/Waypoint]
+
+## Theme
+Based off France!
+* Vaviville Town
+* Aquacorde Town
+* Lumiose City
+* Santalune City
+* Cyllage City
+* Shalour City
+* Coumarine City
+* Laverre City
+* Dendemille Town
+* Anistar City
+* Snowbelle City
+* Kiloude City
 [/section]
 
 [section]
@@ -121,6 +173,19 @@ Info for gen 6 here. based off france
 [Waypoint onEnterView:`whichGen = 7` ]
 Alolaaaaaaa
 [/Waypoint]
+
+## Theme
+Hawaii, that's for sure!
+* Iki Town
+* Hau'oli City
+* Heahea City
+* Paniola Town
+* Royal Avenue
+* Konikoni City
+* Malie City
+* Tapu Village
+* Po Town 
+* Seafolk Village
 [/section]
 
 [fixed]
