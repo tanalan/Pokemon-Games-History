@@ -6,27 +6,30 @@
   author:"Alan Tan"
   authorLink:"https://github.com/tanalan" /]
 
-
 # Currently a work in progress!
 Hi there! This will be an interactive article (made using [Idyll](https://idyll-lang.org/)) for showing facts, information,
 and history about the Pokémon games, from the beginning Pokémon Red/Blue, all
 the way to Pokémon Sun/Moon! All Seven Generations!
 
-
 //TODO Some of my backstory with Pokémon games maybe
+
 [var name:"whichGen" value: 1 /]
-[var name:"regionPics" value:`new Array(7)` /]
-[display value: regionPics /]
+// Contains each region image for the scrolling to change
+[var name:"regionPictures" value:`[
+  'images/kanto.png',
+  'images/johto.png',
+  'images/hoenn.png',
+  'images/sinnoh.png',
+  'images/unova.png',
+  'images/kalos.png',
+  'images/alola.png'
+]` /]
+// [display value: regionPictures /] for debugging the array
 [section]
-// TODO find consistent pics for each region
-// Maybe official maps for each game (Bulbapedia seems fine tho)
-[Waypoint onEnterView:`whichGen == 1`]
+[Waypoint onEnterView:`whichGen = 1`]
 # Generation 1: The Kanto Region
-[fixed]
-//TODO Make a component that chooses the proper `whichGen` image
-![Kanto](https://cdn.bulbagarden.net/upload/4/43/HGSS_Kanto.png)
-[/fixed]
-The region based in the first Pokémon games, [Red and Blue](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions),
+The region based in the first Pokémon games, 
+[Red and Blue](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions),
 the Kanto region is based on and named after the real [Kantō](https://en.wikipedia.org/wiki/Kant%C5%8D_region) region in Japan.
 
 ## Theme
@@ -44,31 +47,45 @@ The cities and towns are named with the theme of ***colors*** // TODO add respec
 * The Indigo Plateau (Known as the Pokémon League)
 [/Waypoint]
 [/section]
-# Generation 2: The Johto Region
-[Aside]
-![Johto](https://cdn.bulbagarden.net/upload/6/64/JohtoMap.png)
-[/Aside]
-# Generation 3: The Hoenn Region
-[Aside]
-![Hoenn](https://cdn.bulbagarden.net/upload/8/85/Hoenn_ORAS.png)
-[/Aside]
-# Generation 4: The Sinnoh Region
-[Aside]
-![Sinnoh](https://cdn.bulbagarden.net/upload/7/74/Pt_Sinnoh.png)
-[/Aside]
-# Generation 5: The Unova Region
-[Aside]
-![Unova from BW2](https://cdn.bulbagarden.net/upload/f/fc/Unova_B2W2_alt.png)
-[/Aside]
-# Generation 6: The Kalos Region
-[Aside]
-![Kalos](https://cdn.bulbagarden.net/upload/8/8a/Kalos_alt.png)
-[/Aside]
-# Generation 7: The Alola Region
-[Aside]
-![Alola](https://cdn.bulbagarden.net/upload/0/0b/Alola_USUM_artwork.png)
-[/Aside]
 
-// TODO maybe reduce the redundancy ? Or it seems difficult b/c there will be content
-// between each generation?
+[section]
+[Waypoint onEnterView:`whichGen = 2`]
+# Generation 2: The Johto Region
+Whose mans really out here
+[/Waypoint]
+[/section]
+
+[section]
+[Waypoint onEnterView:`whichGen = 3`]
+# Generation 3: The Hoenn Region
+[/Waypoint]
+[/section]
+
+[section]
+[Waypoint onEnterView:`whichGen = 4`]
+# Generation 4: The Sinnoh Region
+[/Waypoint]
+[/section]
+
+[section]
+[Waypoint onEnterView:`whichGen = 5`]
+# Generation 5: The Unova Region
+[/Waypoint]
+[/section]
+
+[section]
+[Waypoint onEnterView:`whichGen = 6`]
+# Generation 6: The Kalos Region
+[/Waypoint]
+[/section]
+
+[section]
+[Waypoint onEnterView:`whichGen = 7`]
+# Generation 7: The Alola Region
+[/Waypoint]
+[/section]
+
+[fixed]
+  [img src:`regionPictures[whichGen - 1]` /]
+[/fixed]
 
