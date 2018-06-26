@@ -13,6 +13,8 @@ the way to Pokémon Sun/Moon! All Seven Generations!
 
 //TODO Some of my backstory with Pokémon games maybe
 
+# TODO add the onEnterView to div or something since Waypoint is no longer a valid component
+
 [var name:"whichGen" value: 1 /]
 // Contains each region image for the scrolling to change
 [var name:"regionPictures" value:`[
