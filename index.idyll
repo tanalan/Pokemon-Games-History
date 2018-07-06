@@ -15,6 +15,11 @@ the way to Pokémon Sun/Moon! All Seven Generations!
 
 # TODO add the onEnterView to div or something since Waypoint is no longer a valid component
 
+// TODO use the scroller component instead
+// upon entering the generations make them more bold or something more poppy/showy, that clearly lets you know what section you're in
+// Rather than bolding the active, fading out what is no longer active
+// Step component as well! As replacement for waypoint
+
 [var name:"whichGen" value: 1 /]
 // Contains each region image for the scrolling to change
 [var name:"regionPictures" value:`[
